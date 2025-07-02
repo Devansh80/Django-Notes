@@ -1,3 +1,4 @@
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 # Django Framework - Beginner's Guide
 
 ## What is Django?
@@ -11,11 +12,20 @@ Django is a Python web framework that helps you build web applications quickly. 
   - **Template**: HTML presentation (what users see)
 
 ## Installation & Setup
+With Virtual Environment [OS - Ubunut/Linux]
 ```bash
+python3 -m venv virtualenv
+source virtualenv/bin/activate
 pip install django
+django-admin
 django-admin startproject mysite
 cd mysite
 python manage.py runserver
+python manage.py startapp blog
+```
+Note: Django project runs on port: 8000 by default
+```bash
+127.0.0.1:8000
 ```
 
 ## Django Project Structure
@@ -225,6 +235,10 @@ admin.site.register(Post)
 4. View processes request, interacts with models
 5. View renders template with data
 6. Django returns HTTP response to user
+
+<div id="header" align="center">
+  <img src="https://miro.medium.com/v2/resize:fit:786/format:webp/1*m2_0pEyl1cfnfWYgCSlAZA.png" />
+</div>
 
 ## Best Practices for Beginners
 1. **One app per functionality** - Keep apps focused and small
